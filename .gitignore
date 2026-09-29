@@ -1,0 +1,22 @@
+# File sementara Windows / macOS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# OneDrive & log
+*.tmp
+*.log
+~$*
+
+# node (kalau nanti pakai Vercel CLI di sini)
+node_modules/
+.vercel/
+
+# File konfigurasi rahasia - JANGAN pernah di-commit
+.env
+.env.local
+.env*.local
