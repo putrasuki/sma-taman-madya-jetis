@@ -1,0 +1,12 @@
+# Normalisasi line ending supaya diff git bersih di Windows maupun Linux/Mac.
+# Semua file teks disimpan sebagai LF di repo.
+* text=auto eol=lf
+
+# Gambar dan berkas biner: jangan disentuh
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.svg  text eol=lf

@@ -157,13 +157,6 @@ address { font-style: normal; }
   text-transform: uppercase;
 }
 
-.eyebrow .dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--gold-500);
-}
-
 h1,
 h2 {
   color: var(--ink-900);
@@ -306,14 +299,14 @@ h3 { color: var(--ink-900); font-size: var(--step-1); line-height: 1.35; }
   margin-bottom: var(--sp-4);
 }
 
-.site-nav a {
-  display: block;
-  padding: 0.6rem 0.5rem;
-  border-radius: var(--radius-sm);
-  color: var(--ink-700);
-  font-weight: 500;
-  text-decoration: none;
-}
+  .site-nav a {
+    display: block;
+    padding: 0.85rem 0.75rem;
+    border-radius: var(--radius-sm);
+    color: var(--ink-700);
+    font-weight: 500;
+    text-decoration: none;
+  }
 
 .site-nav ul a:hover,
 .site-nav ul a.is-active {
@@ -326,6 +319,10 @@ h3 { color: var(--ink-900); font-size: var(--step-1); line-height: 1.35; }
 /* ---------- 7. Hero ---------- */
 .hero {
   position: relative;
+  display: grid;
+  align-content: center;
+  min-height: 62vh;
+  min-height: 62svh;
   overflow: hidden;
   padding-block: var(--sp-8) var(--sp-8);
   background-color: var(--green-800);
@@ -378,8 +375,8 @@ h3 { color: var(--ink-900); font-size: var(--step-1); line-height: 1.35; }
 /* ---------- 7b. Sekilas ---------- */
 .stat-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--sp-4);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--sp-3);
   margin-top: var(--sp-6);
   padding-top: var(--sp-5);
   border-top: 1px solid var(--line);
@@ -388,6 +385,7 @@ h3 { color: var(--ink-900); font-size: var(--step-1); line-height: 1.35; }
 .stat dt {
   color: var(--ink-500);
   font-size: var(--step--1);
+  text-wrap: balance;
 }
 
 .stat dd {
