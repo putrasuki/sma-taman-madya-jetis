@@ -796,10 +796,7 @@ h3 { color: var(--ink-900); font-size: var(--step-1); line-height: 1.35; }
 
   .testimonial-grid { grid-template-columns: repeat(3, 1fr); }
 
-  .gallery { grid-template-columns: repeat(4, 1fr); }
-  .gallery-tall { grid-row: span 2; grid-column: span 2; }
-  .gallery-tall img { aspect-ratio: 3 / 4; }
-  .gallery-wide { grid-column: span 4; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
 
   .footer-inner { grid-template-columns: 1.4fr 1fr; }
   .copyright { grid-column: 1 / -1; }
